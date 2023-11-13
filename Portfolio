@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;                                                                                                                   
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .header img {
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+
+        .header h1 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 1.2em;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: #eee;
+            padding: 10px;
+        }
+
+        .nav a {
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2em;
+            padding: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .nav a:hover {
+            background-color: #ddd;
+        }
+
+        .main {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 20px;
+        }
+
+        .card {
+            flex: 1 1 calc(20% - 20px);
+            margin: 10px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            background-color: #fff;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .card img {
+            width: 100%;
+            height: 150px;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .card h3 {
+            margin: 10px 0;
+            color: #333;
+        }
+
+        .card p {
+            text-align: justify;
+        }
+
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="https://miro.medium.com/v2/resize:fit:2400/1*bvUDJqd_vq20bJdxt6aiSw.jpeg" alt="Pratyush Shrivastava">
+            <h1>Pratyush Shrivastava</h1>
+            <p>A passionate software developer from India</p>
+        </div>
+        <div class="nav">
+            <a href="#Home">Home</a>
+            <a href="#Projects">Projects</a>
+            <a href="#Skills">Skills</a>
+            <a href="#Contact">Contact</a>
+        </div>
+        <div class="main" id="Home">
+            <div class="card">
+                <img src="https://d1xafqim8ep2fx.cloudfront.net/assets/me/w210/smileyleft_500x500.png" alt="Pratyush Shrivastava">
+                <h3>About Me</h3>
+                <p>Hi, I am Pratyush Shrivastava, a BCA student at Poornima University, Jaipur. I am interested in mobile application and full stack development. I am currently learning C, C++ and Python. I also work in non-profit fields to create an impact. I am a blogger at Times of India and a volunteer at Youth Against Injustice Foundation.</p>
+            </div>
+            <div class="card" id="Projects">
+                <img src="https://cdn-icons-png.flaticon.com/512/3625/3625060.png" alt="Projects">
+                <h3>Projects</h3>
+                <p>Here are some of the projects that I have worked on or contributed to:</p>
+                <ul>
+                    <li><a href="https://github.com/yush87799/Matrix-in-C">Matrix in C</a>: To input values of 2 Matrices and store in 2D array, then show sum and multiplication matrix.</li>
+                    <li><a href="https://github.com/yush87799/Matrix-2-3-multiplication-using-return-type-function-amd-pointer-in-c">Matrix Multiplication using C</a>: Matrix 2*3 multiplication using return type function and pointer in C.</li>
+                    <li><a href="https://github.com/yush87799/Name-using-string.h-in-C">String in C</a>: Input name and find total length of characters, reverse the name and uppercase or lowercase the name using C.</li>
+                    <li><a href="https://github.com/yush87799">Portfolio</a>: A chat app made with Socket.io.</li>
+                </ul>
+            </div>
+            <div class="card" id="Skills">
+                <img src="https://cdn3.iconfinder.com/data/icons/education-47/128/1-27-512.png" alt="Skills">
+                <h3>Skills</h3>
+                <p>These are some of the skills that I have acquired or learned:</p>
+                <ul>
+                    <li>HTML5, CSS4, JavaScript</li>
+                    <li>Event Handling, EcmaScript, React</li>
+                    <li>C, C++, Python, Java</li>
+                    <li>Git, GitHub</li>
+                    <li>Amazon Web Services (AWS), MySQL</li>
+                </ul>
+            </div>
+            <div class="card" id="Contact">
+                <img src="https://uk.fi-group.com/wp-content/uploads/sites/7/2022/04/FI-Connect-1920x700.jpg" alt="Contact">
+                <h3>Contact</h3>
+                <p>If you want to get in touch with me, you can reach me at:</p>
+                <ul>
+                    <li>Email: <a href="mailto:pratyusharpan28@gmail.com">pratyusharpan28@gmail.com</a></li>
+                    <li>Phone: +91 637881xxxx</li>
+                    <li>LinkedIn: <a href="https://www.linkedin.com/in/pratyush28/">Pratyush Shrivastava</a></li>
+                    <li>Twitter: <a href="https://twitter.com/Pratyush_YAR">@Pratyush_YAR</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="Footer">
+            <p>© 2023 Pratyush Shrivastava. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+
+</html>
